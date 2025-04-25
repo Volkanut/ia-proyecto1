@@ -1,0 +1,63 @@
+""
+==============================
+  Proyecto: Agente Pac-Man IA
+==============================
+Ajustar dimensiones en windows las dimensiones cambian , en visual/panel_ui.py los botones de la UI 
+# Configuración de botones
+BUTTON_WIDTH = 100
+BUTTON_HEIGHT = 80
+en visual/renderer.py
+# Configuración de la ventana
+CELL_SIZE = 200 poner 100
+
+Este proyecto implementa un agente inteligente que navega un laberinto dinámico,
+evitando obstáculos y buscando alcanzar la meta. Está desarrollado en Python con Pygame.
+
+REQUISITOS:
+-----------
+- Python 3.10+
+- Pygame
+- Carpeta `assets` con imágenes de sprites
+
+INSTALACIÓN:
+------------
+1. Clonar o descargar el repositorio.
+2. Instalar dependencias:
+   pip install -r requirements.txt
+3. Ejecutar el programa:
+   python main.py
+
+CONTROLES:
+----------
+- BFS: Búsqueda en Amplitud
+- DFS: Búsqueda en Profundidad
+- A*: Búsqueda A estrella
+- AVARA: Búsqueda Greedy
+- ADAPT: Agente adaptativo que selecciona la mejor estrategia
+- DYN: Modo dinámico (mueve fantasmas y meta)
+- START: Inicia la animación del recorrido
+- F/C: Cambia el tamaño del laberinto con inputs (Filas/Columnas)
+- RESET: Reinicia el estado visual y vuelve al punto de inicio
+
+ESTRUCTURA DEL PROYECTO:
+-------------------------
+- main.py             → punto de entrada
+- visual/renderer.py  → renderizado del laberinto y GUI
+- entorno/            → lógica del entorno, personaje, meta y laberinto
+- agentes/            → algoritmos de búsqueda (bfs, dfs, astar, etc.)
+- core/               → definición de estados, operadores y heurísticas
+- assets/             → sprites de fantasmas, Pac-Man, y la meta
+- config.py           → configuración global (costos, colores, sprites, etc.)
+
+NOTAS ADICIONALES:
+------------------
+- El personaje se representa con una animación estilo Pac-Man.
+- Los fantasmas tienen sprites personalizados y se mueven aleatoriamente.
+- Se imprime el costo acumulado y el detalle paso a paso del recorrido.
+- El historial visual se muestra en el lateral izquierdo.
+
+Autor: Johan Sebastian Acosta Restrepo
+Juan Guitierrez
+Kevin Bejarano
+"==============================
+  Proyecto
